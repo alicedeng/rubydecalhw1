@@ -6,7 +6,6 @@ class Foobar
   	c = b.delete_if &:odd?
   	d = c.uniq
   	e = d.reject { |a| a > 10}
-  	puts e.to_s
   	f = e.inject(0){|sum,x| sum + x }
   	return f
 
